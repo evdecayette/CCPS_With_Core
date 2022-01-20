@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-3">
+           <a asp-controller="Personne" asp-action="Create" class="btn btn-primary w-100">
+               <i class="bi bi-plus-circle"></i> &nbsp; Inscrire un Etudiant
+            </a>
+        </div>
+        <div class="col-3">
+            <a asp-controller="ListeDeTousLesEtudiants"  class="btn btn-primary w-100">
+               <i class="bi bi-plus-circle"></i> &nbsp; Liste Des Etudiants
+            </a>
+        </div>
+         <div class="col-3">
+            <a asp-controller=""  class="btn btn-primary w-100">
+               <i class="bi bi-plus-circle"></i> &nbsp; Etudiants Par Classe(Excel)
+            </a>
+        </div>
+        <div class="col-3">
+            <a asp-controller="ChangerHoraire" class="btn btn-primary w-100">
+               <i class="bi bi-plus-circle"></i> &nbsp; Modifier Horaire
+            </a>
+        </div> 
+    </div>
+    
+    <div class="row pt-4">
+        <div class="col-3">
+           <a asp-controller="AddClassInSessions" class="btn btn-primary w-100">
+               <i class="bi bi-plus-circle"></i> &nbsp; Inserer Classe ds une session
+            </a>
+        </div>
+        <div class="col-3">
+            <a asp-controller="AjouterEtudiantDansClasse" class="btn btn-primary w-100">
+               <i class="bi bi-plus-circle"></i> &nbsp; Ajouter Etudiant dans classe
+            </a>
+        </div>
+         <div class="col-3">
+            <a asp-controller="VoirEtudiantParClasse" class="btn btn-primary w-100">
+               <i class="bi bi-plus-circle"></i> &nbsp; Voir Etudiants Par Classe
+            </a>
+        </div>
+        <div class="col-3">
+            <a asp-controller="EnleverUnEtudiant" class="btn btn-primary w-100">
+               <i class="bi bi-plus-circle"></i> &nbsp; Enlever Etudiants Dans Classe
+            </a>
+        </div> 
+    </div> 
+    
+    <div class="row pt-4">
+        <div class="col-3">
+           <a asp-controller="EtudiantGraduees" class="btn btn-primary w-100">
+               <i class="bi bi-plus-circle"></i> &nbsp; Etudiants Déjà Gradués
+            </a>
+        </div>
+        <div class="col-3">
+            <a asp-controller="AdminPanel"  class="btn btn-primary w-100">
+               <i class="bi bi-plus-circle"></i> &nbsp; Setup Admin
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+﻿@model CCPS_Project_New_Tech.Models.Personne
+@{
+    ViewData["Title"] = "ChoixProfesseur";
+    Layout = "~/Views/Shared/_LayoutAdminPanel.cshtml";
+}
+
+<div class="container">
+    <!-- Html pour Ajouter classe dans la session courante -->
+    <form  method="post" enctype="multipart/form-data">
+      <div class="border p-3 mt-4">
+       <div class="row"> 
+          <h2 class="text-primary text-center">Selectioner les Professeurs Pour la Session Courante</h2>
+          <hr />
+            <div class="col-12">
+               <!-- Modal -->       
+                <div class="mb-3 row">
+                   <div class="col-6 px-5">
+                      <select id="lstProfs" name="lstProfs" asp-items="ViewBag.Personne" multiple class="form-control" size="5"></select>
+                            @*<ul class="list-group" style="background-color: black;">
+                      @foreach(var obj in Model)
+                      {
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                             @obj.Nom
+                          </li>
+                      }*@
+                          @*<li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Second checkbox
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Third checkbox
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Fourth checkbox
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Fifth checkbox
+                          </li>*@
+                      @*  </ul> *@            
+                    </div>
+                     <div class="col-6">
+                        <div class="form-floating">
+                             <textarea class="form-control" style="height:250px;" placeholder="Visualiser vos choix" id="floatingTextarea"></textarea>
+                             <label for="floatingTextarea">Visualiser vos choix</label>
+                        </div>                      
+                    </div>
+                </div>               
+             </div>
+        
+               <div class="col-12">
+                  <a class="btn btn-secondary" data-bs-dismiss="modal" style="width:150px">
+                    FERMER
+                  </a>
+                 <button type="submit" class="btn btn-primary align-center mx-3" style="width:150px">SAUVEGARDER</button>
+                </div>
+            </div>
+        </div>
+    </form>        
+</div>
+

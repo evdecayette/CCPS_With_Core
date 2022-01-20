@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+} 
+<div class="border p-3">
+       <div class="row pb-2">
+           <div class="col-6">
+                <h2 class="text-primary text-center">Parametre Session Courante</h2>
+           </div>
+           <div class="col-2">
+
+           </div>
+           
+          <div class="col-4 text-end">
+            <form class="d-flex">
+                 <input class="form-control me-sm-2" type="text" placeholder="Search">
+                 <button class="btn btn-secondary my-0 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+        <hr />
+         
+        <div class="col-4 p-3"> 
+           <div class="card">
+             <div class="card-header text-primary text-center">
+                Choississez un Etudiant
+             </div>
+            <div class="card-body">
+               <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    The current link item
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                  <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+                </div>
+               
+            </div>
+         </div>
+        </div> 
+        <div class="col-4 p-3"> 
+           <div class="card">
+             <div class="card-header text-primary text-center">
+                Classe à Enlever
+             </div>
+            <div class="card-body">
+               <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    The current link item
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                  <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+                </div>
+               
+            </div>
+         </div>
+        </div> 
+        <div class="col-4 p-3"> 
+           <div class="card">
+             <div class="card-header text-primary text-center">
+                Classe à Ajouter
+             </div>
+            <div class="card-body">
+               <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    The current link item
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                  <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+                </div>
+               
+            </div>
+         </div>
+        </div>
+       <div class="text-center">        
+        <a asp-controller="Panel" asp-action="Index" class="btn btn-primary mx-5" style="width:150px">
+            CHANGEZ
+        </a>
+        </div>
+     </div> 
+   </div>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}

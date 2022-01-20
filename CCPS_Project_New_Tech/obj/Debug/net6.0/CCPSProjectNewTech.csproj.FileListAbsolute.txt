@@ -1,0 +1,8 @@
+C:\Users\50947\source\repos\CCPS_Project_New_Tech\CCPS_Project_New_Tech\obj\Debug\net6.0\CCPSProjectNewTech.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\50947\source\repos\CCPS_Project_New_Tech\CCPS_Project_New_Tech\obj\Debug\net6.0\CCPSProjectNewTech.AssemblyInfoInputs.cache
+C:\Users\50947\source\repos\CCPS_Project_New_Tech\CCPS_Project_New_Tech\obj\Debug\net6.0\CCPSProjectNewTech.AssemblyInfo.cs
+C:\Users\50947\source\repos\CCPS_Project_New_Tech\CCPS_Project_New_Tech\obj\Debug\net6.0\CCPSProjectNewTech.csproj.CoreCompileInputs.cache
+C:\Users\50947\source\repos\CCPS_Project_New_Tech\CCPS_Project_New_Tech\obj\Debug\net6.0\CCPSProjectNewTech.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\50947\source\repos\CCPS_Project_New_Tech\CCPS_Project_New_Tech\obj\Debug\net6.0\CCPSProjectNewTech.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\50947\source\repos\CCPS_Project_New_Tech\CCPS_Project_New_Tech\obj\Debug\net6.0\CCPSProjectNewTech.RazorAssemblyInfo.cache
+C:\Users\50947\source\repos\CCPS_Project_New_Tech\CCPS_Project_New_Tech\obj\Debug\net6.0\CCPSProjectNewTech.RazorAssemblyInfo.cs

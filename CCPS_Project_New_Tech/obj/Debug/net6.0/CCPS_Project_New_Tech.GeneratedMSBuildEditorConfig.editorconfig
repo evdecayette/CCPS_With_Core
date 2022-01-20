@@ -1,0 +1,164 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CCPS_Project_New_Tech
+build_property.RootNamespace = CCPS_Project_New_Tech
+build_property.ProjectDir = C:\Users\50947\source\repos\CCPS_Project_New_Tech\CCPS_Project_New_Tech\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\50947\source\repos\CCPS_Project_New_Tech\CCPS_Project_New_Tech
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/AddClassInSessions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkQ2xhc3NJblNlc3Npb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/AdminPanel/AddAnonce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxBZGRBbm9uY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/AdminPanel/AddClasseInSession.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxBZGRDbGFzc2VJblNlc3Npb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/AdminPanel/AddHeurDeClasse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxBZGRIZXVyRGVDbGFzc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/AdminPanel/AddJourDeClasse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxBZGRKb3VyRGVDbGFzc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/AdminPanel/AddNewSalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxBZGROZXdTYWxsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/AdminPanel/ChoixProfesseur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxDaG9peFByb2Zlc3NldXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/AdminPanel/EditerUneSession.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxFZGl0ZXJVbmVTZXNzaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/AdminPanel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/AjouterEtudiantDansClasse/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWpvdXRlckV0dWRpYW50RGFuc0NsYXNzZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/ChangerHoraire/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhbmdlckhvcmFpcmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/EnleverUnEtudiant/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5sZXZlclVuRXR1ZGlhbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/EtudiantGraduees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXR1ZGlhbnRHcmFkdWVlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/ListeDeTousLesEtudiants/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGVEZVRvdXNMZXNFdHVkaWFudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Panel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFuZWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Personne/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29ubmVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Personne/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29ubmVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Personne/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29ubmVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Personne/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29ubmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Shared/_LayoutAdminPanel - Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pblBhbmVsIC0gQ29weS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Shared/_LayoutAdminPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pblBhbmVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/VoirEtudiantParClasse/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9pckV0dWRpYW50UGFyQ2xhc3NlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/50947/source/repos/CCPS_Project_New_Tech/CCPS_Project_New_Tech/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-cwmm8n8th8

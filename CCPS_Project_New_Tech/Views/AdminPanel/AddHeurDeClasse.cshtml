@@ -1,0 +1,44 @@
+﻿@model HeuresDeClasses
+@{
+    ViewData["Title"] = "AddHeurDeClasse";
+    Layout = "~/Views/Shared/_LayoutAdminPanel.cshtml";
+}
+<div class="container">
+    <!-- Html pour Ajouter classe dans la session courante -->
+    <form  method="post" enctype="multipart/form-data">
+      <div class="border p-3 mt-4">
+       <div class="row"> 
+          <h2 class="text-primary text-center">Ajouter Heure Des Classes</h2>
+          <hr />
+            <div class="col-12">
+               <!-- Modal -->       
+                <div class="mb-3 row">
+                     <label class="col-sm-2 col-form-label py-2">Heure </label>
+                    <div class="col-sm-10">
+                         <input asp-for="Horaire" class="form-control" placeholder="2h PM - 4hPM">
+                    </div>
+                </div> 
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Option </label>
+                    <div class="col-sm-10">
+                     <select asp-for="Categorie" class="form-select" aria-label="Default select example">
+                        <option selected>Selectionnez Option</option>
+                        <option value="1">Informatique</option>
+                        <option value="2">Anglais</option>
+                        <option value="2">Plomberie</option>
+                     </select>
+                    </div>
+                </div>
+             </div>
+        
+               <div class="col-12">
+                  <a class="btn btn-secondary" data-bs-dismiss="modal" style="width:150px">
+                    FERMER
+                  </a>
+                 <button type="submit" class="btn btn-primary align-center mx-3" style="width:150px">SAUVEGARDER</button>
+                </div>
+            </div>
+        </div>
+    </form>        
+</div>
+

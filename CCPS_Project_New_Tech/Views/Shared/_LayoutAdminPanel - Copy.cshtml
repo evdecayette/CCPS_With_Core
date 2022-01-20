@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CCPS_Project_New_Tech</title>
+    <link rel="stylesheet" href="~/css/bootswatchtheme.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CCPS_Project_New_Tech.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+
+
+        <!--My copy start here-->
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="px-5">
+         <a class="navbar-brand"  asp-controller="Home" asp-action="Index">ACCUEIl</a>
+         <a class="navbar-brand"  asp-controller="Panel" asp-action="Index">EDUCATION</a>
+         <a class="navbar-brand"  asp-controller="#" asp-action="Index">COMPTABILITÉ</a>
+     </div>
+    @*<div class="text-end">     
+      <form class="d-flex">
+        <input class="form-control me-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>*@
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <div class="offcanvas offcanvas-end w-25" style="Height:95%;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Parametre Adminstrateur</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-center">
+        <ul class="navbar-nav">
+          <li class="nav-item py-2">
+            <button  type="button" class="btn btn-primary" style="width:90%;" asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#AddSession">Créer une nouvelle Session</button>
+          </li>
+          <li class="nav-item py-2">
+            <button  type="button" class="btn btn-primary" style="width:90%;"  data-bs-toggle="modal" id="AddClasses" data-bs-target="#AddClasse">Ajouter Classe Dans la Session</button>
+          </li>
+          <li class="nav-item py-2">
+            <button  type="button" class="btn btn-primary" style="width:90%; asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#AddSalle">Ajouter Nouvelle Salle</button>
+          </li>
+          <li class="nav-item py-2">
+            <button  type="button" class="btn btn-primary" style="width:90%; asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#AddJour">Ajouter Jours de Classe</button>
+          </li>
+          <li class="nav-item py-2">
+            <button  type="button" class="btn btn-primary" style="width:90%; asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#AddHeures">Ajouter Heures de Classe</button>
+          </li>
+          <li class="nav-item py-2">
+            <button  type="button" class="btn btn-primary" style="width:90%; asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#ChoixProf">Choix des Professeurs</button>
+          </li>
+          <li class="nav-item py-2">
+            <button  type="button" class="btn btn-primary" style="width:90%; asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#Annonce">Ajouter Une Annonce</button>
+          </li>
+          <li class="nav-item py-2">
+            <button  type="button" class="btn btn-primary" style="width:90%; asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#EditSession">Editer Une Session</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+$(function(){
+  $("#AddClasses").click(function(){
+    window.location.href = "@Url.Action("AdminPanel","AddClasseInSession")";
+  });
+});
+</script>
+
+<!-- My copy end here-->
+        
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer text-muted bg-dark fixed-bottom">
+        <div class="container" align="center">
+            &copy; 2021 - CCPS_Project_New_Tech - <asp-controller="Home" asp-action="Privacy">Privacy</>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

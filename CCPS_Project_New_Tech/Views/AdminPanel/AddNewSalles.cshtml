@@ -1,0 +1,43 @@
+﻿@model SalleDeClasses
+@{
+    ViewData["Title"] = "AddNewSalles";
+    Layout = "~/Views/Shared/_LayoutAdminPanel.cshtml";
+}
+
+<div class="container">
+    <form  method="post">
+        <div class="border p-3 mt-4">
+       <div class="row">
+           <h2 class="text-primary text-center">Ajouter Nouvelle Salle De Classe</h2>
+           <hr />
+            <div class="col-12 pt-3">
+              <div class="mb-3 row">
+                 <label class="col-sm-2 col-form-label py-2">Nom de la salle</label>
+                 <div class="col-sm-10">
+                    <input asp-for="NomDuSalle" class="form-control" placeholder="Entrer le nom de la salle)">
+                 </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Dscription</label>
+                    <div class="col-sm-10">
+                         <input asp-for="SalleDescription" class="form-control" placeholder="Description de la salle">                       
+                    </div>
+                 </div>
+                 <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Dscription</label>
+                    <div class="col-sm-10">
+                         <input asp-for="NombreDePersonne" class="form-control" placeholder="Description de la salle">                       
+                    </div>
+                 </div>
+               </div>        
+               <div class="modal-footer">
+                  <a class="btn btn-secondary" data-bs-dismiss="modal" style="width:150px">
+                    FERMER
+                  </a>
+                 <button type="submit" class="btn btn-primary align-center mx-3" style="width:150px">SAUVEGARDER</button>
+                </div>
+            </div>
+          </div>
+    </form>        
+</div>
+

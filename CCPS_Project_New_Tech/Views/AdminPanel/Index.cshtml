@@ -1,0 +1,418 @@
+﻿@model CreerSession
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutAdminPanel.cshtml";
+
+}
+<div class="container">
+  <form  method="post" enctype="multipart/form-data">
+  <div class="border p-3 mt-4">
+    <div class="row">      
+        <h2 class="text-primary text-center">Créer Une Nouvelle Session</h2>
+          <hr />
+        <div class="col-12 pt-3">       
+                <div class="modal-body">
+                   <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Date Début</label>
+                    <div class="col-sm-10">
+                         <input asp-for="SessionDateDebut" class="form-control" placeholder="jj/mm/aaaa">
+                    </div>
+               </div>
+               <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2"> Date Fin</label>
+                    <div class="col-sm-10">
+                         <input asp-for="SessionDateFin" class="form-control" placeholder="jj/mm/aaaa">                       
+                    </div>
+               </div>
+              <div class="mb-3 row">
+                <label class="col-md-2 col-form-label p-2"></>Remarque</label>
+                <div class="col-lg-10">
+                     <input asp-for="Remarque" class="form-control" placeholder="Remarque">
+                </div>
+            </div> 
+            </div>
+        
+           <div class="modal-footer">
+              <a class="btn btn-secondary" data-bs-dismiss="modal" style="width:150px">
+                FERMER
+              </a>
+             <input type="submit" class="form-control align-center mx-3" value="SAUVEGARDER" style="width:150px">
+            </div>
+                  
+        </div>
+       </div>
+     </div>
+   </form>
+</div>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}
+
+
+
+     <!---Try-->
+     @*<div class="col-6">*@
+       @*   <div class="col-4 pt-3">
+             <nav class="navbar alert-dark link-light" style="margin-left:460px; width:350px; height:550px">
+                <div class="container-fluid pb-5">
+                    <ul class="navbar-nav" style="margin-left:30px;">
+                      <li class="nav-item py-2">
+                        <button  type="button" class="btn btn-primary" style="width:100%;" asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#AddSession">Créer une nouvelle Session</button>
+                      </li>
+                      <li class="nav-item py-2">
+                        <a href="@Url.Action("AddClasseInSession","AdminPanel")" class="btn btn-primary" style="width:100%;">Créer une nouvelle Session</a>
+                      </li>
+                      <li class="nav-item py-2">
+                        <button  type="button" class="btn btn-primary" style="width:100%; asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#AddSalle">Ajouter Nouvelle Salle</button>
+                      </li>
+                      <li class="nav-item py-2">
+                        <button  type="button" class="btn btn-primary" style="width:100%; asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#AddJour">Ajouter Jours de Classe</button>
+                      </li>
+                      <li class="nav-item py-2">
+                        <button  type="button" class="btn btn-primary" style="width:100%; asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#AddHeures">Ajouter Heures de Classe</button>
+                      </li>
+                      <li class="nav-item py-2">
+                        <button  type="button" class="btn btn-primary" style="width:100%; asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#ChoixProf">Choix des Professeurs</button>
+                      </li>
+                      <li class="nav-item py-2">
+                        <button  type="button" class="btn btn-primary" style="width:100%; asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#Annonce">Ajouter Une Annonce</button>
+                      </li>
+                      <li class="nav-item py-2">
+                        <button  type="button" class="btn btn-primary" style="width:100%; asp-controller="AdminPanel" asp-action="SessionCreat"  data-bs-toggle="modal" data-bs-target="#EditSession">Editer Une Session</button>
+                      </li>
+                    </ul>
+                </div>
+              </nav>
+              </div>*@
+
+
+
+     <!-- Try fin-->
+
+
+
+  <!-- Fin Html pour Creer une Nouvelle Session -->
+
+ @*   <!-- Html pour Ajouter classe dans la session courante -->
+<form  method="post" enctype="multipart/form-data">
+   <div class="row">      
+        <div class="col- pt-3">
+           <!-- Modal -->
+            <div class="modal fade"  id="AddClasse" data-bs-backdrop="static" 
+                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" style="height:800px; margin-left:90px; margin-top:100px">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h5 class="modal-title text-primary" id="staticBackdropLabel">Ajouter Classe Dans La Session Courante</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body">
+                   <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Nom</label>
+                    <div class="col-sm-10">
+                         <input class="form-control" placeholder="Entrer le nom de la classe(Nom + I ou II ou +...)">
+                    </div>
+                 </div> 
+                 <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Description</label>
+                    <div class="col-sm-10">
+                         <input class="form-control" placeholder="Entrer la description(Niveau 1 ou Niveau 2, ...)">
+                    </div>
+                 </div>
+               <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Niveau</label>
+                    <div class="col-sm-10">
+                         <input class="form-control" placeholder="Entrer le  Niveau (1,2,...)">                       
+                    </div>
+               </div>
+               <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Categorie</label>
+                     <div class="col-sm-10">
+                         <input class="form-control" placeholder="Classe Categorie (Anglais,Informatique ou autres)">                       
+                    </div>
+               </div>
+            </div>
+        
+           <div class="modal-footer">
+              <a class="btn btn-secondary" data-bs-dismiss="modal" style="width:150px">
+                FERMER
+              </a>
+             <input type="submit" asp-action="Index" asp-controller="AddClassInSessions" class="btn btn-primary align-center mx-3" style="width:150px">
+            </div>
+        </div>
+       </div>
+      </div>
+     </div>
+   </div>
+ </form>        
+  <!-- Fin Html pour Ajouter classe dans la session courante --> 
+
+  <!-- Html pour Ajouter Nouvelle salle de classe -->
+<form  method="post">
+   <div class="row">      
+        <div class="col- pt-3">
+           <!-- Modal -->
+            <div class="modal fade"  id="AddSalle" data-bs-backdrop="static" 
+                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" style="height:800px; margin-left:90px; margin-top:100px">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h5 class="modal-title text-primary" id="staticBackdropLabel">Ajouter Nouvelle Salle De Classe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body">
+                   <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Nom de la salle</label>
+                    <div class="col-sm-10">
+                         <input class="form-control" placeholder="Entrer le nom de la salle)">
+                    </div>
+               </div>
+               <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Dscription</label>
+                    <div class="col-sm-10">
+                         <input class="form-control" placeholder="Description de la salle">                       
+                    </div>
+               </div>
+            </div>
+        
+           <div class="modal-footer">
+              <a class="btn btn-secondary" data-bs-dismiss="modal" style="width:150px">
+                FERMER
+              </a>
+             <button type="submit" class="btn btn-primary align-center mx-3" style="width:150px">SAUVEGARDER</button>
+            </div>
+        </div>
+       </div>
+      </div>
+     </div>
+   </div>
+</form>        
+
+  <!-- Fin Html pour Ajouter Nouvelle salle de classe --> 
+
+  <!-- Html pour Ajouter Jour de classe -->
+   <div class="row">      
+        <div class="col- pt-3">
+           <!-- Modal -->
+            <div class="modal fade"  id="AddJour" data-bs-backdrop="static" 
+                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" style="height:800px; margin-left:90px; margin-top:100px">
+                <div class="modal-content">
+                 <form  method="post" enctype="multipart/form-data">
+                  <div class="modal-header text-center">
+                    <h5 class="modal-title text-primary px-5" id="staticBackdropLabel">Ajouter Les Jours De Classe</h5>
+                    <br/>
+                    <h6 class="modal-title text-primary" id="staticBackdropLabel">Nb: Separez les jours avec un tirait (-)</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body">
+                   <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Jours </label>
+                    <div class="col-sm-10">
+                         <input class="form-control" placeholder="Entrer le(s) Jour(s) (Jour ou Jour1 - Jour2)">
+                    </div>
+               </div>
+            </div>
+        
+           <div class="modal-footer">
+              <a class="btn btn-secondary" data-bs-dismiss="modal" style="width:150px">
+                FERMER
+              </a>
+             <button type="submit" class="btn btn-primary align-center mx-3" style="width:150px">SAUVEGARDER</button>
+            </div>
+          </form>        
+        </div>
+       </div>
+      </div>
+     </div>
+   </div>
+  <!--Fin Html pour Ajouter Jours de classe -->
+
+  <!-- Html pour Ajouter Heures de classe -->
+   <div class="row">      
+        <div class="col- pt-3">
+           <!-- Modal -->
+            <div class="modal fade"  id="AddHeures" data-bs-backdrop="static" 
+                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" style="height:800px; margin-left:90px; margin-top:100px">
+                <div class="modal-content">
+                 <form  method="post" enctype="multipart/form-data">
+                  <div class="modal-header text-center">
+                    <h5 class="modal-title text-primary px-5" id="staticBackdropLabel">Ajouter Les Heures De Classe</h5>
+                    <br/>
+                    <h6 class="modal-title text-primary" id="staticBackdropLabel">Nb: Separez les heures avec un tirait (-)</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body">
+                   <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Heure </label>
+                    <div class="col-sm-10">
+                         <input class="form-control" placeholder="2h PM - 4hPM">
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label py-2">Option </label>
+                    <div class="col-sm-10">
+                     <select class="form-select" aria-label="Default select example">
+                        <option selected>Selectionnez Option</option>
+                        <option value="1">Informatique</option>
+                        <option value="2">Anglais</option>
+                        <option value="2">Plomberie</option>
+                     </select>
+                    </div>
+                  </div>
+            </div>
+        
+           <div class="modal-footer">
+              <a class="btn btn-secondary" data-bs-dismiss="modal" style="width:150px">
+                FERMER
+              </a>
+             <button type="submit" class="btn btn-primary align-center mx-3" style="width:150px">SAUVEGARDER</button>
+            </div>
+          </form>        
+        </div>
+       </div>
+      </div>
+     </div>
+   </div>
+  <!--Fin Html pour Ajouter Heures de classe -->
+
+  <!-- Html pour Ajouter Professeurs dans la session -->
+   <div class="row">      
+        <div class="col- pt-3">
+           <!-- Modal -->
+            <div class="modal fade"  id="ChoixProf" data-bs-backdrop="static" 
+                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" style="height:800px; margin-left:90px; margin-top:100px">
+                <div class="modal-content">
+                 <form  method="post" enctype="multipart/form-data">
+                  <div class="modal-header text-center">
+                    <h5 class="modal-title text-primary px-5" id="staticBackdropLabel">Choix des Professeurs</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body">
+                   <div class="mb-3 row">
+                    <div class="col-6 px-5">
+                          <ul class="list-group" style="background-color: black;">
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            First checkbox
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Second checkbox
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Third checkbox
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Fourth checkbox
+                          </li>
+                          <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                            Fifth checkbox
+                          </li>
+                        </ul>             
+                    </div>
+                      <div class="col-6">
+                        <div class="form-floating">
+                             <textarea class="form-control" style="height:250px;" placeholder="Visualiser vos choix" id="floatingTextarea"></textarea>
+                             <label for="floatingTextarea">Visualiser vos choix</label>
+                        </div>                      
+                    </div>
+                  </div>
+               </div>
+        
+           <div class="modal-footer">
+              <a class="btn btn-secondary" data-bs-dismiss="modal" style="width:150px">
+                FERMER
+              </a>
+             <button type="submit" class="btn btn-primary align-center mx-3" style="width:150px">SAUVEGARDER</button>
+            </div>
+          </form>        
+        </div>
+       </div>
+      </div>
+     </div>
+   </div>
+  <!--Fin Html pour Ajouter Professeur de classe -->
+
+
+  <!-- Html pour Editer une session -->
+   <div class="row"> 
+           <!-- Modal -->
+            <div class="modal fade"  id="EditSession" data-bs-backdrop="static" 
+                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" style="height:800px; margin-left:70px; margin-top:100px">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h5 class="modal-title text-primary" id="staticBackdropLabel">Editer La Session Courante</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body">
+                    <div class="py-0">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                   <div class="mb-3 row">
+                    <div class="col-6">
+                         <select class="form-select my-4" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                         </select>
+                            <select class="form-select my-4" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                         </select>
+                         <div class="mb-3">
+                             <input class="form-control" placeholder="Max Etudiant">
+                          </div>
+                         <div class="mb-3">
+                            <input asp-for="SessionDateDebut" class="form-control" placeholder="Date Debut(jj/mm/aaaa)">
+                         </div>
+                       </div>
+                     <div class="col-6">
+                            <select class="form-select my-4" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <select class="form-select my-4" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select> 
+                            <div class="mb-3">
+                                <input class="form-control" placeholder="Montant de Participation">
+                           </div>
+                        <div class="mb-0">
+                               <input  asp-for="SessionDateFin" class="form-control w-100" placeholder="Date Fin (jj/mm/aaaa)">
+                            </div>
+                       </div>
+                  </div>
+               </div>
+             <div class="modal-footer">
+              <a class="btn btn-secondary" data-bs-dismiss="modal" style="width:150px">
+                FERMER
+              </a>
+             <button type="submit" class="btn btn-primary align-center mx-3" style="width:150px">SAUVEGARDER</button>
+            </div>
+        </div>
+       </div>
+      </div>
+     </div>*@
+  <!-- Fin Html pour Editer une session -->

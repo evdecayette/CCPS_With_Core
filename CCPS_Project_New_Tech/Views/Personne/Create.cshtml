@@ -1,0 +1,152 @@
+﻿@model Personne
+
+@{
+  ViewData["Title"] = "Index";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form asp-action="Create">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary text-center">Inscrire un Étudiant</h2>
+            <hr />
+        
+        <div class="col-6">
+            <div class="mb-3 row">
+                <label for="Nom" class="col-sm-2 col-form-label"><i class="bi bi-file-person-fill"></i> Nom</label>
+                <div class="col-sm-10">
+                     <input asp-for="Nom" class="form-control" placeholder="Nom">
+                     <span asp-validation-for="Nom" class="alert-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+             <div class="mb-3 row">
+                <label class="col-md-2 col-form-label p-2"><i class="bi bi-file-person-fill"></i>Prénom</label>
+                <div class="col-lg-10">
+                     <input asp-for="Prenom" class="form-control" placeholder="Prénom">
+                     <span asp-validation-for="Prenom" class="alert-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+             <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label py-2"><i class="bi bi-calendar-plus"></i> DDN</label>
+                <div class="col-sm-10">
+                     <input asp-for="DDN" class="form-control" placeholder="Date de Naissance">
+                     <span asp-validation-for="DDN" class="alert-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"><i class="bi bi-gender-ambiguous"></i> Sexe</label>
+                <div class="col-sm-10">
+                     <select asp-for="Sexe" class="form-select" aria-label="Default select example">
+                        <option selected>Choix de votre Sexe</option>
+                        <option value="1">M</option>
+                        <option value="2">F</option>
+                     </select>
+                     <span asp-validation-for="Sexe" class="alert-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label py-2"><i class="bi bi-telephone"></i> Tel1 </label>
+                <div class="col-sm-10">
+                     <input asp-for="Tel1" class="form-control" placeholder="Téléphone">
+                     <span asp-validation-for="Tel1" class="alert-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+           <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label py-2"><i class="bi bi-telephone"></i> Tel</label>
+                <div class="col-sm-10">
+                     <input asp-for="Tel2" class="form-control" placeholder="Téléphone en cas d'urgence">
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+           <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label py-2"><i class="bi bi-envelope"></i> Email</label>
+                <div class="col-sm-10">
+                     <input asp-for="Email" class="form-control" placeholder="Email">
+                     <span asp-validation-for="Email" class="alert-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+             <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label p-2"><i class="bi bi-house"></i> Adresse</label>
+                <div class="col-sm-10">
+                     <input asp-for="Adresse" class="form-control" placeholder="Votre Adresse">
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label py-2"><i class="bi bi-house"></i> Ville</label>
+                <div class="col-sm-10">
+                     <input asp-for="Ville" class="form-control" placeholder="Adresse Ville">
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label py-2"><i class="bi bi-house"></i> Pays</label>
+                <div class="col-sm-10">
+                     <input asp-for="Pays" class="form-control" placeholder="Pays">
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"><i class="bi bi-receipt"></i> # Reçu</label>
+                <div class="col-sm-10">
+                     <input asp-for="NumeroRecu" class="form-control" placeholder="Numéro du reçu">
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            
+                <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label py-2"><i class="bi bi-file-earmark-arrow-up"></i>Photo </label>
+                <div class="col-sm-10">
+                     <input  asp-for="Photo" class="form-control" id="formFile" type="file">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 p-3"> 
+           <div class="card text-center">
+             <div class="card-header">
+                 Statut De la Personne
+             </div>
+            <div class="card-body">
+                <label class="px-2">| Etudiant  </label>
+                @Html.RadioButtonFor(m => m.Statut, "Etudiant")
+                <label class="px-2">| Professeur </label>
+                @Html.RadioButtonFor(m => m.Statut,"Professeur")
+
+
+                <label class="px-2">| Staff </label>
+                @Html.CheckBoxFor(m => m.AdminStaff,0)
+            </div>
+         </div>                       
+        </div>
+        <div class="col-6 mt-5"> 
+            <button type="submit" class="btn btn-primary align-center mx-5" style="width:150px">SAUVEGARDEZ</button>
+            <a asp-controller="Pesonne" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            CANCEL
+            </a>
+        </div> 
+   </div>
+   </div>
+</form>
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}

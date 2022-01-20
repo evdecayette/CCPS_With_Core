@@ -1,0 +1,14 @@
+﻿@{
+    //Layout = "_Layout";
+    //Layout = "_LayoutAdminPanel";
+    @if(User.Identity.IsAuthenticated)
+    {
+       // Layout = "_LayoutAdminPanel";
+        Layout = "_Layout";
+    }
+    else
+    {
+        Layout = "_LayoutAdminPanel";
+        //Layout = "_Layout";
+    }
+}
